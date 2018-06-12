@@ -1,0 +1,84 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:windowBackground"
+    tools:context="com.lkkn.scanner.app.Bio">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/about_background_layout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:gravity="center_horizontal"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:background="#009688"
+            />
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/info"
+            />
+
+  <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent">
+
+      <EditText
+          android:id="@+id/email"
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:layout_alignParentTop="true"
+          android:layout_alignStart="@+id/imageView1"
+          android:layout_marginTop="21dp"
+          android:background="@drawable/serach"
+          android:gravity="center"
+          android:layout_marginLeft="5dp"
+          android:layout_marginRight="5dp"
+          android:hint="Email Address"
+          android:inputType="text"
+          android:textColor="#3b3a3a"
+          android:textColorHint="#FFF" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="45dp"
+            android:layout_height="47dp"
+
+            android:layout_marginLeft="1dp"
+            android:layout_alignStart="@+id/imageView"
+            android:layout_alignTop="@+id/email"
+            android:src="@drawable/mail" />
+
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/imageView1"
+          android:id="@+id/update"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="20dp"
+          android:background="#039BE5"
+          android:layout_marginLeft="5dp"
+          android:layout_marginRight="5dp"
+          android:textColor="#fff"
+          android:layout_marginBottom="10dp"
+          android:text="Update"
+
+          />
+  </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

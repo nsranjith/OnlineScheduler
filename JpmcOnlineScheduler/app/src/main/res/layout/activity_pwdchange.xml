@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#009688"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".WorkFlow.Pwdchange">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mobile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:textStyle="bold"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:text="@string/title"
+        android:textColor="#fff" />
+
+    <EditText
+        android:id="@+id/mobile"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/pwd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/shape"
+        android:gravity="center"
+        android:hint="Enter Registered Email Id"
+        android:inputType="text"
+        android:textColor="#3b3a3a"
+        android:textColorHint="#FFF" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="45dp"
+        android:layout_height="47dp"
+        android:layout_alignStart="@+id/mobile"
+        android:layout_alignTop="@+id/mobile"
+        android:layout_marginStart="11dp"
+        android:src="@drawable/mail" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/mobile"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shapes"
+        android:onClick="change"
+        android:text="Reset Password"
+        android:textColor="#fff" />
+
+</RelativeLayout>

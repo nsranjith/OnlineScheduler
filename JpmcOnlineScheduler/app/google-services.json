@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "736539579066",
+    "firebase_url": "https://jpmconlinescheduler.firebaseio.com",
+    "project_id": "jpmconlinescheduler",
+    "storage_bucket": "jpmconlinescheduler.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:736539579066:android:939bda9ae8e2009e",
+        "android_client_info": {
+          "package_name": "com.lkkn.scanner.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "736539579066-6qs8hcjedspb10lprrfmt7m6allspbke.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lkkn.scanner.app",
+            "certificate_hash": "6fd6aeb85525eecf68b21e477ac3a77e9f114efa"
+          }
+        },
+        {
+          "client_id": "736539579066-jk1lr2493lk51o64dtm21lnkb0o65ucu.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "736539579066-jk1lr2493lk51o64dtm21lnkb0o65ucu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBE-m8TbSiMyr3mrIcz2usqjHGgG0kGRsE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "736539579066-jk1lr2493lk51o64dtm21lnkb0o65ucu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

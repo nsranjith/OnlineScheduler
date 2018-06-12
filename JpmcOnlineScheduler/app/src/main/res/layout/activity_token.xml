@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:windowBackground"
+    android:orientation="vertical"
+    tools:context=".WorkFlow.Generate">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fff">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/about_background_layout"
+            android:layout_gravity="center_horizontal">
+                <TextView
+                android:id="@+id/heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="#009688"
+                android:padding="5dp"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="Queue Information"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/heading"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                    <!--#80faf0f0-->
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+                <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Length of the Queue:  "
+                      android:layout_marginLeft="10dp"
+                      android:textAppearance="?android:textAppearanceLarge"
+                      />
+                  <TextView
+                      android:id="@+id/tc"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginBottom="10dp"
+                      android:textStyle="bold"
+                      android:textAppearance="?android:textAppearanceLarge" />
+              </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Running Token count: "
+                android:layout_marginLeft="10dp"
+                android:textAppearance="?android:textAppearanceLarge" />
+                <TextView
+                android:id="@+id/rc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:textAppearance="?android:textAppearanceLarge" />
+            </LinearLayout>
+            <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Waiting time: "
+            android:id="@+id/t_time"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textAppearance="?android:textAppearanceLarge" />
+            <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:textAppearance="?android:textAppearanceLarge" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your token: "
+                android:id="@+id/t_token"
+                android:visibility="invisible"
+                android:layout_marginLeft="10dp"
+                android:textAppearance="?android:textAppearanceLarge" />
+            <TextView
+                android:id="@+id/token"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:textAppearance="?android:textAppearanceLarge" />
+            </LinearLayout>
+
+             <Button
+                android:id="@+id/generate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="generate"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#fff"
+                android:background="#08C65B"
+                android:layout_marginBottom="30dp"
+                android:text="Generate"
+                />
+            <Button
+                android:id="@+id/navigate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#039BE5"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#fff"
+                android:layout_marginBottom="30dp"
+                android:text="Route map to bank" />
+            </LinearLayout>
+                </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_gravity="bottom"
+            android:layout_height="300dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:background="#faf0f0"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_height="wrap_content"
+                android:textColor="#1b1c1d"
+                android:text="@string/TokenInfo"
+                />
+        </LinearLayout>
+
+
+</LinearLayout>
+</LinearLayout>

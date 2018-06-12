@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">LKKN SCAN</string>
+    <string name="title"><u>LKKN SCAN</u></string>
+    <string name="footer">Don\'t have an account ?<u>CLICK HERE</u></string>
+    <string name="pwd"><u>Forgot password?</u></string>
+    <string name="title_activity_servicess">Select Service</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Log Out</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="TokenInfo"><font color='#ff0000'>*</font>
+        E-token will be valid until there are 5 people ahead of ur Queue, Try to be in time to make an active use of it.
+
+
+    </string>
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Hello User!</string>
+    <string name="slide_1_desc">Welcome to our application! Go through the story to know the features</string>
+
+    <string name="slide_2_title">Registration</string>
+    <string name="slide_2_desc">Register with our application, to begin the journey with us.</string>
+
+    <string name="slide_3_title">Select Your Choices for booking the Token </string>
+    <string name="slide_3_desc">Select the services and branches in which you need to book the token</string>
+
+    <string name="slide_4_title">Get Your Token</string>
+    <string name="slide_4_desc">Generate the e-token for your operations!</string>
+
+    <string name="play_again_desc">Get your route </string>
+    <string name="play_again">Know your route from your location to destination branch</string>
+
+    <string name="token">Know your Token </string>
+    <string name="token_again">Get the list of the tokens you booked</string>
+</resources>

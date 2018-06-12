@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#009688"
+    tools:context=".WorkFlow.MainActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textAppearance="?android:textAppearanceLarge"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mobile"
+            android:gravity="center"
+            android:maxLength="10"
+            android:inputType="number"
+            android:layout_marginTop="10dp"
+            android:textColorHint="#fff"
+            android:hint="Enter your Mobile number"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/shape"
+            android:drawableLeft="@drawable/mobile"
+
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/verify"
+            android:onClick="verify"
+            android:text="Verify"
+            android:textColor="#fff" />
+    </LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/otp"
+        android:inputType="number"
+        android:layout_marginTop="10dp"
+        android:textColorHint="#fff"
+        android:hint="Enter your Otp"
+        android:visibility="invisible"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/shape"
+        android:drawableLeft="@drawable/otp"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ed5d15"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:id="@+id/timer"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shapes"
+        android:text="Submit Otp"
+        android:onClick="submitOtp"
+        android:textColor="#fff" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:id="@+id/resend"
+        android:layout_marginTop="10dp"
+        android:onClick="verify"
+        android:visibility="invisible"
+        android:background="@drawable/google"
+        android:text="Resend Otp"
+        android:textColor="#fff" />
+
+
+</LinearLayout>

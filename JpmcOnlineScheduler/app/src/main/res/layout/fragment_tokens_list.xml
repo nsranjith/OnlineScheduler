@@ -1,0 +1,200 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?android:windowBackground"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    tools:context="com.lkkn.scanner.app.TokensList">
+  <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+      android:background="@drawable/about_background_layout">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/heading"
+        android:text="Know Your Token"
+        android:gravity="center_horizontal"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:background="#009688"
+        />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:orientation="vertical"
+      android:layout_below="@+id/heading"
+      android:layout_height="wrap_content"
+      >
+
+  <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+      android:id="@+id/spinner_services"
+      app:hintText="Select Your Service"
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      android:layout_marginLeft="5dp"
+      android:layout_marginRight="5dp"
+      android:layout_alignParentStart="true"
+      android:layout_centerVertical="true"
+      android:background="@drawable/serach"
+      android:layout_marginTop="20dp"
+      android:layout_marginBottom="20dp"
+      android:gravity="center"
+      android:paddingLeft="10dp"
+      />
+
+  <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+      android:id="@+id/spinner_branch"
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      android:layout_marginLeft="5dp"
+      android:layout_marginRight="5dp"
+      app:hintText="Select Your Branch"
+      android:layout_alignParentStart="true"
+      android:layout_centerVertical="true"
+      android:background="@drawable/serach"
+      android:layout_marginBottom="20dp"
+      android:layout_marginTop="20dp"
+      android:gravity="center"
+      android:paddingLeft="10dp" />
+
+  <Button
+      android:id="@+id/Go"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Go"
+      android:layout_marginBottom="10dp"
+      android:textColor="#fff"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+      android:background="#08C65B"
+
+      />
+  </LinearLayout>
+  </RelativeLayout>
+
+  <android.support.v7.widget.CardView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+      app:cardBackgroundColor="#4296ea"
+      android:visibility="invisible"
+      android:id="@+id/card"
+      android:layout_marginTop="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Branch : "
+            android:textColor="#fff"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="10dp"
+            android:textAppearance="?android:textAppearanceLarge"
+            />
+        <TextView
+            android:id="@+id/branch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_marginBottom="30dp"
+            android:textStyle="bold"
+            android:textAppearance="?android:textAppearance" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service : "
+            android:textColor="#fff"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="10dp"
+            android:textAppearance="?android:textAppearanceLarge"
+            />
+        <TextView
+            android:id="@+id/service"
+            android:textColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:textStyle="bold"
+            android:textAppearance="?android:textAppearance" />
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your count: "
+            android:textColor="#fff"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="2dp"
+            android:textAppearance="?android:textAppearanceLarge"
+            />
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textAppearance="?android:textAppearance" />
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your token:"
+            android:textColor="#fff"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="10dp"
+            android:textAppearance="?android:textAppearanceLarge"
+            />
+        <TextView
+            android:id="@+id/etoken"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textAppearance="?android:textAppearance" />
+      </LinearLayout>
+
+
+
+    </LinearLayout>
+  </android.support.v7.widget.CardView>
+
+
+
+</LinearLayout>

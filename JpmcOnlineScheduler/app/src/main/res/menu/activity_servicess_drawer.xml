@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/update"
+            android:icon="@drawable/bio"
+            android:title="Update Details" />
+        <item
+            android:id="@+id/token"
+            android:icon="@drawable/token"
+            android:title="Know your Token" />
+        <item
+            android:id="@+id/service"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Service" />
+        <item
+            android:id="@+id/chat"
+            android:icon="@drawable/chat"
+            android:title="Chat" />
+        <!--<item-->
+            <!--android:id="@+id/reschedule"-->
+            <!--android:icon="@drawable/redo"-->
+            <!--android:title="Reschedule" />-->
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+        </menu>
+    </item>
+
+</menu>
